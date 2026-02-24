@@ -36,8 +36,13 @@
     <!-- Main Content -->
     <nav class="navbar">
         <div class="nav-container">
-            <!-- Left: Menu Space -->
+            <!-- Left: Links -->
             <div class="nav-left">
+                <a href="#sostenibilita">Sostenibilità</a>
+                <span class="sep">·</span>
+                <a href="#prodotti">Prodotti</a>
+                <span class="sep">·</span>
+                <a href="#chi-siamo">Chi Siamo</a>
             </div>
 
             <!-- Center: Logo -->
@@ -45,9 +50,28 @@
                 <a href="/" class="logo">PO MO DO</a>
             </div>
 
-            <!-- Right: Icons Space -->
+            <!-- Right: Instagram & Order -->
             <div class="nav-right">
+                <a href="https://www.instagram.com/po_mo_do/" target="_blank" class="instagram-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://wa.me/393201836065" target="_blank" class="btn-order">Ordina ora</a>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu">
+            <a href="#sostenibilita">Sostenibilità</a>
+            <a href="#prodotti">Prodotti</a>
+            <a href="#chi-siamo">Chi Siamo</a>
         </div>
     </nav>
 
@@ -273,12 +297,20 @@
             // Navbar Scroll Effect
             const navbar = document.querySelector('.navbar');
             window.addEventListener('scroll', () => {
-                if (window.scrollY > 80) {
+                if (window.scrollY > 60) {
                     navbar.classList.add('scrolled');
                 } else {
                     navbar.classList.remove('scrolled');
                 }
             }, { passive: true });
+
+            // Mobile Menu Toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            if (menuToggle) {
+                menuToggle.addEventListener('click', () => {
+                    navbar.classList.toggle('menu-open');
+                });
+            }
 
 
             // Check if user prefers reduced motion
