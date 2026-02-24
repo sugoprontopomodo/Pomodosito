@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PO MO DO | L'Essenza del Pomodoro</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600&family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500;600&family=Fredoka:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- SVG Noise Filter definition -->
+    <svg style="display: none;">
+        <filter id="noiseFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+        </filter>
+    </svg>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Ambient Background Layer -->
+    <div class="ambient-background">
+        <!-- SVG Noise Overlay covering everything -->
+        <div class="noise-layer"></div>
+        <!-- Colored light blobs -->
+        <div class="blob blob-yellow"></div>
+        <div class="blob blob-red-left"></div>
+        <div class="blob blob-red-right"></div>
+    </div>
+
+    <!-- Main Content -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Left: Menu Space -->
+            <div class="nav-left">
+            </div>
+
+            <!-- Center: Logo -->
+            <div class="nav-center">
+                <a href="/" class="logo">PO MO DO</a>
+            </div>
+
+            <!-- Right: Icons Space -->
+            <div class="nav-right">
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-wrapper">
+        <section class="hero-section reveal-on-scroll">
+
+            <!-- Animated Gradient Blobs (Meridian Fund Style) -->
+            <div class="meridian-blobs">
+                <div class="m-blob m-blob-red"></div>
+                <div class="m-blob m-blob-yellow"></div>
+                <div class="m-blob m-blob-orange"></div>
+            </div>
+
+            <!-- Floating Hero Images -->
+            <div class="hero-floating-images">
+                <img src="rosso 1.png" alt="Pomodoro 1" class="floating-img fi-1">
+                <img src="rosso2.png" alt="Pomodoro 2" class="floating-img fi-2">
+                <img src="rosso 3.png" alt="Pomodoro 3" class="floating-img fi-3">
+                <img src="rosso 4.png" alt="Pomodoro 4" class="floating-img fi-4">
+                <img src="rosso 5.png" alt="Pomodoro 5" class="floating-img fi-5">
+            </div>
+
+            <!-- Floating 3D Glass Spheres -->
+            <div class="glass-spheres">
+                <div class="glass-sphere sphere-1"></div>
+                <div class="glass-sphere sphere-2"></div>
+                <div class="glass-sphere sphere-3"></div>
+            </div>
+
+            <div class="container hero-container">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <h1 class="hero-title">L'ESSENZA DEL<br>POMODORO,<br>NUDA E CRUDA.</h1>
+                    <p class="hero-subtitle">Dal campo al 'boccaccio'.<br>Solo datterini freschi, lavorati come un
+                        rituale di bellezza.</p>
+                    <a href="#collezione" class="btn-primary glass-btn">Scopri il rituale</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="story-section bg-cream reveal-on-scroll">
+            <div class="container story-grid">
+                <div class="story-text">
+                    <h2>UNA TERRA OSTINATA,<br>UN RISPETTO ANTICO.</h2>
+                    <p class="lead">La nostra sostenibilità ha le mani di Papà Rocco, l’agricoltore della famiglia.
+                        Coltiviamo pomodori biologici certificati rispettando i principi dei nostri nonni e la
+                        conservazione del territorio lucano.</p>
+                </div>
+                <div class="story-features">
+                    <div class="feature-item">
+                        <span class="feature-label">Biodiversità</span>
+                        <p class="feature-value">Proteggiamo l'equilibrio naturale del Vulture attraverso una coltura
+                            fondata su principi sani.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-label">Filiera Corta</span>
+                        <p class="feature-value">Ogni fase avviene a Palazzo San Gervasio, riducendo al minimo l'impatto
+                            ambientale e gli intermediari.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section reveal-on-scroll">
+            <div class="container gallery-grid">
+                <div class="gallery-card">
+                    <div class="gallery-image glass-card parallax-container">
+                        <img src="giallo.webp" alt="Datterini Gialli Frischezza" class="parallax-img" />
+                    </div>
+                    <p class="gallery-caption">Datterini Gialli – Dolcezza infinita</p>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image glass-card parallax-container">
+                        <img src="rosso.webp" alt="Pomodori San Marzano Rossi" class="parallax-img" />
+                    </div>
+                    <p class="gallery-caption">San Marzano – Polpa generosa</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section reveal-on-scroll">
+            <div class="container">
+                <h2 class="section-title text-center">DAL CAMPO AL "BOCCACCIO"<br>IN MENO DI 24 ORE.</h2>
+                <p class="section-subtitle text-center">Il segreto di PO MO DO è il tempo. Quello che risparmi tu in
+                    cucina, lo mettiamo noi nella lavorazione.</p>
+
+                <div class="process-grid">
+                    <div class="process-card">
+                        <h4>Lavorazione in Giornata</h4>
+                        <p>Raccogliamo solo pomodori a perfetta maturazione e li trasformiamo immediatamente per
+                            preservarne il profumo originale.</p>
+                    </div>
+                    <div class="process-card">
+                        <h4>Pazienza Artigianale</h4>
+                        <p>Mamma Cristina cura la cottura lenta, unendo il pomodoro alla cipolla rossa e all'olio EVO di
+                            alta qualità, senza aggiungere coloranti o conservanti.</p>
+                    </div>
+                    <div class="process-card">
+                        <h4>Piccoli Lotti</h4>
+                        <p>Produciamo in quantità limitate per garantire che ogni vasetto riceva la premura che solo una
+                            madre ha per i suoi figli.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container about-grid">
+                <div class="about-image glass-card">
+                    <img src="familiapomodo.webp" alt="La Famiglia PO MO DO" class="placeholder-img" />
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">IL SEGRETO È<br>LA FAMIGLIA.</h2>
+                    <p class="lead">Non siamo un'industria. Siamo Papà Rocco e Mamma Cristina, un contadino e una cuoca
+                        con la passione per il nostro territorio.</p>
+                    <p class="body-text">Tutto è iniziato nella nostra cucina a Palazzo San Gervasio, Basilicata.
+                        Abbiamo deciso di imbottigliare la nostra tradizione, usando esclusivamente i datterini che
+                        coltivano nei nostri campi, per farti ritrovare il sapore della domenica italiana ogni giorno.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="collezione" class="shop-section bg-light-wrap reveal-on-scroll">
+            <div class="container">
+                <h2 class="section-title text-center">TUTTA LA BASILICATA IN UN CLICK.</h2>
+
+                <h3 class="shop-category">I Boccacci</h3>
+                <div class="shop-grid">
+                    <div class="product-card">
+                        <img src="po_mo_do_yellow_jar.png" alt="Datterino Giallo">
+                        <h4>Datterino Giallo</h4>
+                        <p class="size">Formati: 200g / 300g</p>
+                        <p class="price">a partire da € 8,50</p>
+                        <a href="https://wa.me/393201836065" target="_blank" class="btn-whatsapp">Ordina su WhatsApp</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="po_mo_do_red_jar.png" alt="Datterino Rosso">
+                        <h4>Sugo Rosso</h4>
+                        <p class="size">Formati: 200g / 300g</p>
+                        <p class="price">a partire da € 8,50</p>
+                        <a href="https://wa.me/393201836065" target="_blank" class="btn-whatsapp">Ordina su WhatsApp</a>
+                    </div>
+                </div>
+
+                <h3 class="shop-category mt-5">Le Promozioni</h3>
+                <div class="shop-grid">
+                    <div class="product-card horizontal">
+                        <div class="product-info-left">
+                            <span class="feature-label">Welcome Pack</span>
+                            <h4>Pack di Benvenuto</h4>
+                            <p>2x 200g Datterino Giallo + 1x 300g Sugo Rosso. L'introduzione perfetta all'essenza del
+                                pomodoro.</p>
+                        </div>
+                        <div class="product-info-right">
+                            <p class="price">€ 25,00</p>
+                            <a href="https://wa.me/393201836065" target="_blank" class="btn-whatsapp">Ordina su
+                                WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="shop-category mt-5">La Dispensa</h3>
+                <div class="shop-grid">
+                    <div class="product-card horizontal">
+                        <div class="product-info-left">
+                            <span class="feature-label">La Scorta di Casa</span>
+                            <h4>Cartone da 32 barattoli</h4>
+                            <p>Ideale per chi non vuole mai restare senza il sapore del Sud. Scegli il tuo assortimento.
+                            </p>
+                        </div>
+                        <div class="product-info-right">
+                            <p class="price">€ 175,00</p>
+                            <a href="https://wa.me/393201836065" target="_blank" class="btn-whatsapp">Ordina su
+                                WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-content text-center">
+                <h2 class="footer-logo">PO MO DO</h2>
+                <div class="footer-links">
+                    <a href="#">Sostenibilità</a>
+                    <a href="#">Processo</a>
+                    <a href="#collezione">Shop</a>
+                    <a href="https://wa.me/393201836065">Contatti</a>
+                </div>
+                <p class="copyright">&copy; 2026 PO MO DO. Artigianato d'Eccellenza Lucana.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Interactions Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Intersection Observer for Reveal Transitions
+            const revealElements = document.querySelectorAll('.reveal-on-scroll');
+            const revealOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const revealOnScroll = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                });
+            }, revealOptions);
+
+            revealElements.forEach(el => revealOnScroll.observe(el));
+
+
+            // Check if user prefers reduced motion
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            // Scroll Parallax
+            document.addEventListener('scroll', function () {
+                if (prefersReducedMotion || window.innerWidth <= 1024) return;
+
+                const scrolled = window.scrollY;
+
+                // 1. Ambient Background Blobs (Slower: 60% speed -> 0.4 parallax factor)
+                const bgBlobs = document.querySelectorAll('.m-blob');
+                bgBlobs.forEach(blob => {
+                    blob.style.transform = `translateY(${scrolled * 0.4}px)`;
+                });
+
+                // Hero Floating Images Parallax (Foreground effect, moves up differently from normal scroll)
+                const heroFloatingContainer = document.querySelector('.hero-floating-images');
+                if (heroFloatingContainer) {
+                    heroFloatingContainer.style.transform = `translateY(${scrolled * -0.2}px)`;
+                }
+
+                // 2. Foreground Images (Faster: 110% speed -> 0.1 down shift internally within container constraints)
+                const parallaxImages = document.querySelectorAll('.parallax-img');
+                parallaxImages.forEach(img => {
+                    // Calculate speed relative to element's position
+                    const rect = img.parentElement.getBoundingClientRect();
+
+                    // Only apply parallax if element is loosely in viewport
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        const distanceToCenter = (window.innerHeight / 2) - (rect.top + rect.height / 2);
+                        // 110% foreground speed effect by transforming Y inside hidden overflow bounds
+                        const yPos = distanceToCenter * -0.1;
+                        img.style.transform = `translateY(${yPos}px) scale(1.1)`; // Need scale to prevent edge bleeding
+                    }
+                });
+            }, { passive: true });
+        });
+    </script>
+</body>
+
+</html>
