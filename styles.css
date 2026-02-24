@@ -11,8 +11,8 @@
 :root {
   --c-bg: #FDFBF5;
   /* Very pale warm cream */
-  --nav-h: 56px;
-  --nav-pt: 12px;
+  --nav-h: 48px;
+  --nav-pt: 10px;
   --c-text-main: #1C1A17;
   /* Soft almost black */
   --c-text-sub: #4A4A4A;
