@@ -117,7 +117,7 @@
 
 
 
-        <section class="story-section bg-cream reveal-on-scroll">
+        <section id="sostenibilita" class="story-section bg-cream reveal-on-scroll">
             <div class="container story-grid">
                 <div class="story-text">
                     <h2>UNA TERRA OSTINATA,<br>UN RISPETTO ANTICO.</h2>
@@ -183,7 +183,7 @@
             </div>
         </section>
 
-        <section class="about-section">
+        <section id="chi-siamo" class="about-section">
             <div class="container about-grid">
                 <div class="about-image glass-card">
                     <img src="familiapomodo.webp" alt="La Famiglia PO MO DO" class="placeholder-img" />
@@ -200,7 +200,7 @@
             </div>
         </section>
 
-        <section id="collezione" class="shop-section bg-light-wrap reveal-on-scroll">
+        <section id="prodotti" class="shop-section bg-light-wrap reveal-on-scroll">
             <div class="container">
                 <h2 class="section-title text-center">TUTTA LA BASILICATA IN UN CLICK.</h2>
 
@@ -311,6 +311,29 @@
                     navbar.classList.toggle('menu-open');
                 });
             }
+
+            // Smooth Scroll with Offset
+            document.querySelectorAll('.navbar a[href^="#"], .mobile-menu a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        // Close mobile menu if open
+                        navbar.classList.remove('menu-open');
+
+                        const offset = 70;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
 
 
             // Check if user prefers reduced motion
