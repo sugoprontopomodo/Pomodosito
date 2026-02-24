@@ -161,7 +161,7 @@ button {
   /* Follows document flow at top */
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -277,7 +277,7 @@ button {
 
 .hero-container {
   position: relative;
-  z-index: 50;
+  z-index: 100;
   /* Level 1: Text/Button */
   display: flex;
   justify-content: center;
