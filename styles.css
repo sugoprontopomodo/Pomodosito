@@ -510,6 +510,28 @@ button {
   animation-delay: -10s;
 }
 
+/* Yellow Images */
+.fi-y1 {
+  width: 150px;
+  top: 40%;
+  left: 5%;
+  animation-delay: -5s;
+}
+
+.fi-y2 {
+  width: 170px;
+  top: 50%;
+  right: 5%;
+  animation-delay: -20s;
+}
+
+.fi-y3 {
+  width: 140px;
+  bottom: 5%;
+  right: 40%;
+  animation-delay: -35s;
+}
+
 /* =========================================================================
    3D FLOATING GLASS SPHERES
    ========================================================================= */
@@ -1036,6 +1058,13 @@ section {
   }
 
   .fi-5 {
+    display: none !important;
+  }
+
+  /* Yellow Images - Strictly Desktop */
+  .fi-y1,
+  .fi-y2,
+  .fi-y3 {
     display: none !important;
   }
 
