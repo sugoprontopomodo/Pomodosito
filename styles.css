@@ -476,35 +476,35 @@ button {
 }
 
 .fi-1 {
-  width: 180px;
+  width: 260px;
   top: 12%;
   left: 12%;
   animation-delay: 0s;
 }
 
 .fi-2 {
-  width: 135px;
+  width: 190px;
   top: 22%;
   right: 12%;
   animation-delay: -15s;
 }
 
 .fi-3 {
-  width: 210px;
+  width: 300px;
   bottom: 12%;
   left: 12%;
   animation-delay: -30s;
 }
 
 .fi-4 {
-  width: 150px;
+  width: 210px;
   bottom: 18%;
   right: 12%;
   animation-delay: -45s;
 }
 
 .fi-5 {
-  width: 120px;
+  width: 170px;
   top: 8%;
   left: 45%;
   animation-delay: -10s;
@@ -512,21 +512,21 @@ button {
 
 /* Yellow Images */
 .fi-y1 {
-  width: 150px;
+  width: 210px;
   top: 40%;
   left: 5%;
   animation-delay: -5s;
 }
 
 .fi-y2 {
-  width: 170px;
+  width: 240px;
   top: 50%;
   right: 5%;
   animation-delay: -20s;
 }
 
 .fi-y3 {
-  width: 140px;
+  width: 200px;
   bottom: 5%;
   right: 40%;
   animation-delay: -35s;
