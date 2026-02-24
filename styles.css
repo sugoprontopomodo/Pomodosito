@@ -1006,9 +1006,28 @@ section {
     right: 5%;
   }
 
+  .fi-1 {
+    top: 2%;
+    left: 2%;
+    display: block !important;
+  }
+
+  .fi-2 {
+    display: none !important;
+  }
+
+  .fi-3 {
+    display: none !important;
+  }
+
+  .fi-4 {
+    bottom: 2%;
+    right: 2%;
+    display: block !important;
+  }
+
   .fi-5 {
-    top: 5%;
-    left: 45%;
+    display: none !important;
   }
 
   .story-grid,
@@ -1035,12 +1054,17 @@ section {
     aspect-ratio: 1 / 1;
   }
 
-  /* Disable parallax on mobile to prevent overflow/performance issues */
   .m-blob,
-  .glass-sphere,
-  .floating-img {
+  .glass-sphere {
     animation: none !important;
     transform: none !important;
+  }
+
+  .fi-1,
+  .fi-4 {
+    animation: float-img 60s infinite ease-in-out alternate !important;
+    opacity: 0.5;
+    width: 70px !important;
   }
 
   .reveal-on-scroll {
@@ -1065,7 +1089,12 @@ section {
 
   .floating-img {
     display: none;
-    /* Hide decorative images on very small screens to avoid clutter */
+  }
+
+  .fi-1,
+  .fi-4 {
+    display: block !important;
+    width: 60px !important;
   }
 
   .parallax-img {
