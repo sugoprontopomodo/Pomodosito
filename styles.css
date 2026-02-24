@@ -11,8 +11,8 @@
 :root {
   --c-bg: #FDFBF5;
   /* Very pale warm cream */
-  --nav-h: 40px;
-  --nav-pt: 6px;
+  --nav-h: 48px;
+  --nav-pt: 8px;
   --c-text-main: #1C1A17;
   /* Soft almost black */
   --c-text-sub: #4A4A4A;
@@ -1049,10 +1049,6 @@ section {
     padding: 0 5%;
   }
 
-  .navbar {
-    height: 80px;
-  }
-
   .logo {
     font-family: var(--f-lucky) !important;
     font-size: 1.3rem;
@@ -1061,10 +1057,6 @@ section {
   .footer-logo {
     font-family: var(--f-lucky) !important;
     font-size: 2rem;
-  }
-
-  .navbar {
-    height: 56px;
   }
 
   .nav-left {
