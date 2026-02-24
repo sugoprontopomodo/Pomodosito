@@ -61,23 +61,22 @@
                 <div class="m-blob m-blob-orange"></div>
             </div>
 
-            <!-- Floating Hero Images -->
-            <div class="hero-floating-images">
+            <!-- Level 2: Mid/Large Elements -->
+            <div class="hero-layer hero-layer-mid">
                 <img src="rosso 1.png" alt="Pomodoro 1" class="floating-img fi-1">
-                <img src="rosso2.png" alt="Pomodoro 2" class="floating-img fi-2">
                 <img src="rosso 3.png" alt="Pomodoro 3" class="floating-img fi-3">
-                <img src="rosso 4.png" alt="Pomodoro 4" class="floating-img fi-4">
-                <img src="rosso 5.png" alt="Pomodoro 5" class="floating-img fi-5">
-                <!-- Yellow Images -->
-                <img src="Giallo 1.png" alt="Pomodoro Giallo 1" class="floating-img fi-y1">
                 <img src="Giallo 2.png" alt="Pomodoro Giallo 2" class="floating-img fi-y2">
-                <img src="Giallo 3.png" alt="Pomodoro Giallo 3" class="floating-img fi-y3">
+                <div class="glass-sphere sphere-2"></div>
             </div>
 
-            <!-- Floating 3D Glass Spheres -->
-            <div class="glass-spheres">
+            <!-- Level 3: Back/Small Elements -->
+            <div class="hero-layer hero-layer-back">
+                <img src="rosso2.png" alt="Pomodoro 2" class="floating-img fi-2">
+                <img src="rosso 4.png" alt="Pomodoro 4" class="floating-img fi-4">
+                <img src="rosso 5.png" alt="Pomodoro 5" class="floating-img fi-5">
+                <img src="Giallo 1.png" alt="Pomodoro Giallo 1" class="floating-img fi-y1">
+                <img src="Giallo 3.png" alt="Pomodoro Giallo 3" class="floating-img fi-y3">
                 <div class="glass-sphere sphere-1"></div>
-                <div class="glass-sphere sphere-2"></div>
                 <div class="glass-sphere sphere-3"></div>
             </div>
 
@@ -286,10 +285,15 @@
                     blob.style.transform = `translateY(${scrolled * 0.4}px)`;
                 });
 
-                // Hero Floating Images Parallax (Foreground effect, moves up differently from normal scroll)
-                const heroFloatingContainer = document.querySelector('.hero-floating-images');
-                if (heroFloatingContainer) {
-                    heroFloatingContainer.style.transform = `translateY(${scrolled * -0.5}px)`;
+                // Hero Depth Layers Parallax
+                const layerMid = document.querySelector('.hero-layer-mid');
+                const layerBack = document.querySelector('.hero-layer-back');
+
+                if (layerMid) {
+                    layerMid.style.transform = `translateY(${scrolled * -0.6}px)`;
+                }
+                if (layerBack) {
+                    layerBack.style.transform = `translateY(${scrolled * -0.3}px)`;
                 }
 
                 // 2. Foreground Images (Faster: 110% speed -> 0.1 down shift internally within container constraints)

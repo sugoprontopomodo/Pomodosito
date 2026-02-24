@@ -277,7 +277,8 @@ button {
 
 .hero-container {
   position: relative;
-  z-index: 2;
+  z-index: 50;
+  /* Level 1: Text/Button */
   display: flex;
   justify-content: center;
   text-align: center;
@@ -437,17 +438,26 @@ button {
 }
 
 /* =========================================================================
-   HERO FLOATING IMAGES (Rosso)
+   HERO DEPTH LAYERS
    ========================================================================= */
-.hero-floating-images {
+.hero-layer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 3;
   will-change: transform;
+}
+
+.hero-layer-mid {
+  z-index: 40;
+  /* Level 2: Mid/Large Elements */
+}
+
+.hero-layer-back {
+  z-index: 30;
+  /* Level 3: Back/Small Elements */
 }
 
 @keyframes float-img {
@@ -476,75 +486,73 @@ button {
 }
 
 .fi-1 {
-  width: 260px;
-  top: 12%;
-  left: 12%;
+  width: 320px;
+  /* Large */
+  top: 8%;
+  left: 8%;
   animation-delay: 0s;
 }
 
 .fi-2 {
-  width: 190px;
-  top: 22%;
-  right: 12%;
+  width: 160px;
+  /* Small */
+  top: 15%;
+  right: 15%;
   animation-delay: -15s;
 }
 
 .fi-3 {
-  width: 300px;
-  bottom: 12%;
-  left: 12%;
+  width: 350px;
+  /* Large */
+  bottom: 8%;
+  left: 10%;
   animation-delay: -30s;
 }
 
 .fi-4 {
-  width: 210px;
-  bottom: 18%;
-  right: 12%;
+  width: 180px;
+  /* Small */
+  bottom: 12%;
+  right: 18%;
   animation-delay: -45s;
 }
 
 .fi-5 {
-  width: 170px;
-  top: 8%;
+  width: 140px;
+  /* Small */
+  top: 5%;
   left: 45%;
   animation-delay: -10s;
 }
 
 /* Yellow Images */
 .fi-y1 {
-  width: 210px;
-  top: 40%;
-  left: 5%;
+  width: 170px;
+  /* Small */
+  top: 45%;
+  left: 3%;
   animation-delay: -5s;
 }
 
 .fi-y2 {
-  width: 240px;
-  top: 50%;
-  right: 5%;
+  width: 280px;
+  /* Large */
+  top: 35%;
+  right: 3%;
   animation-delay: -20s;
 }
 
 .fi-y3 {
-  width: 200px;
-  bottom: 5%;
-  right: 40%;
+  width: 150px;
+  /* Small */
+  bottom: 15%;
+  right: 35%;
   animation-delay: -35s;
 }
 
 /* =========================================================================
    3D FLOATING GLASS SPHERES
    ========================================================================= */
-.glass-spheres {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 2;
-}
-
 .glass-sphere {
   position: absolute;
   border-radius: 50%;
