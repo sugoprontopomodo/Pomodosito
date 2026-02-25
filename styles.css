@@ -1006,6 +1006,31 @@ section {
   font-family: var(--f-serif);
 }
 
+.product-img-horizontal {
+  width: 180px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.1));
+}
+
+@media (max-width: 768px) {
+  .horizontal {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem;
+  }
+
+  .product-img-horizontal {
+    width: 220px;
+    margin-bottom: 1.5rem;
+  }
+
+  .horizontal .product-info-right {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
 /* Footer */
 .footer {
   padding: 4rem 0 2rem;
